@@ -139,6 +139,28 @@ a {
   /* outline: 2px solid tomato; */
   text-decoration: none;
 }
+.header-nav-1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.header-nav-1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin-top: 29px;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.header-nav-1 {
+}
 .header-list-nav-2 {
   font-style: normal;
   font-weight: 500;
@@ -162,6 +184,7 @@ a {
 .header-nav-1 {
   margin-right: 50px;
 }
+
 .header-contacts {
   font-weight: 500;
   font-size: 14px;
@@ -187,7 +210,6 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--header-color);
   text-decoration: none;
   color: var(--accent-color);
   text-decoration: none;
@@ -336,9 +358,30 @@ a {
 }
 
 .main-info-container-img {
+  position: relative;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
+}
+
+.main-info-container-services {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.main-info-container-h2 {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /* -----КАРТОЧКИ ЛЮДЕЙ=------- */
@@ -673,4 +716,68 @@ a {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 25px;
+}
+
+.overlay-element {
+  position: relative;
+  overflow: hidden;
+}
+.list-work-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+  overflow: auto;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-element:hover .list-work-text,
+.overlay-element:focus .list-work-text {
+  transform: translateY(0%);
+}
+
+/* MODALKA */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+}
+.clous-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
 }

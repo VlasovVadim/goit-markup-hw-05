@@ -20,8 +20,7 @@
     <header class="header">
         <div class="container flex">
             <nav class="nav flex">
-            <a class="logo" href="/"> <span class="web">Web</span>Studio</a>
-           
+            <a class="logo" href="/"> <span class="web">Web</span>Studio</a>           
                 <ul class="header-list-nav-1">
                     <li><a class="header-nav-1" href="./index.html">Студия</a></li>
                     <li><a class="header-nav" href="./portfolio.html">Портфолио</a></li>
@@ -41,8 +40,7 @@
                         <a class="header-contacts" href="">
                             <svg class="header-contacts-icon" width="16" height="12">
                                 <use href="./image/icons.svg#icon-phone">
-                                    
-                                   </use>
+                                                            </use>
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
@@ -56,7 +54,7 @@
             <div class="container">
                 <div class="content-section">
             <h1 class="head">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕССА</h1>
-            <button class="button head-button" type="button">Заказать услугу</button>
+            <button class="button head-button" data-modal-open type="button">Заказать услугу</button>
             </div>
         </div>
         </section>
@@ -113,15 +111,21 @@
                 <ul class="main-info-container list">
                 <li class="main-info-container-img">
                     <img class="img-info" src="./image/coding.jpg" alt="" width="370" height="294" />
-                    
+                    <div class="main-info-container-services"> 
+                        <h2 class="main-info-container-h2">Десктопные приложения</h2>
+                    </div>
                 </li>
                 <li class="main-info-container-img">
                     <img class="img-info" src="./image/mobile.jpg" alt="" width="370" height="294" />
-                    
+                    <div class="main-info-container-services">
+                        <h2 class="main-info-container-h2">Десктопные приложения</h2>
+                    </div>
                 </li>
                 <li class="main-info-container-img">
                     <img class="img-info" src="./image/designer.jpg" alt="" width="370" height="294" />
-                    
+                    <div class="main-info-container-services">
+                        <h2 class="main-info-container-h2">Десктопные приложения</h2>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -381,6 +385,19 @@
         
     </footer>
     <!-- КОНЕЦ ПОДВАЛ -->
+    <!-- MODALKA -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="clous-btn" data-modal-close>
+            <svg width="11" height="11">
+                <use href="./image/icons.svg#icon-icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
