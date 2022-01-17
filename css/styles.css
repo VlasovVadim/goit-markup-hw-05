@@ -131,7 +131,6 @@ a {
 .header-contacts:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list-nav-1 {
@@ -182,6 +181,7 @@ a {
 .header-nav,
 .header-nav-1 {
   margin-right: 50px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -192,6 +192,7 @@ a {
   color: var(--primary-text-color);
   text-decoration: none;
   margin-right: 50px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts-icon {
   fill: currentColor;
@@ -201,7 +202,6 @@ a {
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-1,
@@ -251,11 +251,11 @@ a {
   padding: 10px 32px;
   border-radius: 4px;
   margin: 0 auto;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid tomato; */
 }
 .button:hover {
   background: #188ce8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .head-button {
   text-align: center;
@@ -465,6 +465,7 @@ a {
   border-radius: 50%;
   background-color: var(--primary-white-color);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-icon {
   fill: #afb1b8;
@@ -472,13 +473,11 @@ a {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--primary-white-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ++++++++++++++ПОСТОЯННЫЕ КЛИЕНТЫ ++++++++*/
 .clients-list {
@@ -505,6 +504,7 @@ a {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list-icon {
   fill: #afb1b8;
@@ -513,13 +513,11 @@ a {
 .clients-list-link:hover,
 .clients-list-link:focus {
   border-color: var(--accent-color);
-  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover .clients-list-icon,
 .clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ++++++++++++++КОНЕЦ  ПОСТОЯННЫЕ КЛИЕНТЫ ++++++++*/
 
@@ -589,6 +587,7 @@ a {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-footer-icon {
   fill: var(--primary-white-color);
@@ -597,7 +596,6 @@ a {
 .social-list-footer-link:hover,
 .social-list-footer-link:focus {
   background-color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-footer-link:hover .social-list-icon,
@@ -648,13 +646,13 @@ a {
   letter-spacing: 0.03em;
   border-radius: 4px;
   min-width: 75px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio.secondary:hover,
 .button-portfolio.secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button {
@@ -704,6 +702,7 @@ a {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
   align-content: space-between;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .block-list {
   border: 1px solid #eeeeee;
@@ -715,7 +714,6 @@ a {
 .project-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .block-list {
@@ -748,7 +746,6 @@ a {
 .overlay-element:hover .list-work-text,
 .overlay-element:focus .list-work-text {
   transform: translateY(0%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* MODALKA */
