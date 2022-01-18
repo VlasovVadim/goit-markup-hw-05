@@ -743,8 +743,8 @@ a {
   text-align: start;
 }
 
-.overlay-element:hover .list-work-text,
-.overlay-element:focus .list-work-text {
+.project-list-link:hover .list-work-text,
+.project-list-link:focus .list-work-text {
   transform: translateY(0%);
 }
 
