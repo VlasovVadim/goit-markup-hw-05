@@ -804,3 +804,7 @@ a {
 .form-input::placeholder {
   color: blue;
 }
+.input-text {
+  font-size: 12px;
+  color: grey;
+}
